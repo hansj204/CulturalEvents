@@ -1,0 +1,37 @@
+
+body {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+div#cultures {
+	background-color: #aab7e3;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	border: 1px solid #d9d9d9;
+}
+div.culture {
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size:18px;
+	padding: 10px;
+	border-radius: 6px;
+}
+div.culture:nth-child(2n) {
+	background-color: #3650a9;
+	border-radius: 6px;
+}
+div.culture:first-child {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+div.culture:last-child {
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+

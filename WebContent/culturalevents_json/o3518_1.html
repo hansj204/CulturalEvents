@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서울시 문화행사 서비스_json</title>
+	<script type="text/javascript" src="o3518_1.js"></script>
+	<link rel="stylesheet" href="o3518_1.css">
+<!-- 추가 -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="header" style="background:#ff8040; 
+	color: white; 
+	text-align: center; 
+	text-valign: middle; 
+	height: 25px; 
+	font-size: 20pt; 
+	padding: 25px;"> 
+		서울시 문화행사 서비스 
+	</div>
+	<table width="100%">
+	<tr>
+	<td width="85%">
+	<select id="jenre">
+	<option value="0" selected>모두선택</option>
+	<option value="1">국악</option>
+	<option value="2">콘서트</option>
+	<option value="3">연극</option>
+	<option value="4">무용</option>
+	<option value="5">클래식</option>
+	</select>
+	</td>
+	  <td width="15%"><input id="search" type="button" onclick="javascript:search();" value="분야로 검색" /></td>
+	</tr>
+	</table>
+	
+	<div id="cultures">
+	</div>	
+	<table width="100%">
+	<tr>
+	  <td><input type="button" onclick="javascript:first();" value="처음으로" /></td>
+	  <td><input type="button" onclick="javascript:previous();" value=" <<" /></td>
+	  <td><input type="button" onclick="javascript:next();" value=" >>" /></td>
+	  	  <td><input type="button" onclick="javascript:finish();" value="마지막으로" /></td>
+	</tr>
+	</table>
+</body>
+</html>
